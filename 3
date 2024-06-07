@@ -1,0 +1,10 @@
+function Iva(precio, porcentaje) {
+    let iva = (precio * porcentaje) / 100;
+    let precioFinal = precio + iva;
+    return precioFinal;
+}
+
+let precio = 100;
+let porcentaje = 21; 
+let precioFinal = Iva(precio, porcentaje);
+console.log(precioFinal);
