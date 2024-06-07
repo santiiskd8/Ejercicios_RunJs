@@ -1,0 +1,16 @@
+function contarVocales(texto) {
+    let contador = 0;
+    const vocales = 'aeiouAEIOU';
+
+    for (let i = 0; i < texto.length; i++) {
+        if (vocales.includes(texto[i])) {
+            contador++;
+        }
+    }
+
+    return contador;
+}
+
+let texto = "Hola Mundo";
+let numeroVocales = contarVocales(texto);
+console.log(numeroDeVocales);
